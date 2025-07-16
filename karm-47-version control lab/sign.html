@@ -5,24 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body bgcolor="skyblue">
     <center>
     <h1>Sign in form</h1>
+    <table border="1">
     <form>
-        Name:<input type="text" name="name" id="name"><br>
+        <tr>
+            <td>Name:<input type="text" name="name" id="name"><br></td>
+        </tr>
+        <tr>
+            <td>Address:<textarea cols="20" rows="2" name="address" id="address"></textarea><br></td> 
+        </tr>
         <br>
-        Address:<textarea cols="20" rows="2" name="address" id="address"></textarea><br>
+        <tr>
+                <td>Gender:<input type="radio" name="gender" id="male">Male
+                        <input type="radio" name="gender" id="female">Female<br></td>
+        </tr>
         <br>
-        Gender:<input type="radio" name="gender" id="male">Male
-               <input type="radio" name="gender" id="female">Female<br>
-               <br>
-        Country:<select name="country" id="country">
-               <option value="India">India</option>
-               <option value="Egypt">Egypt</option>
-               <option value="China">China</option>
-             </select>
+        <tr>
+                    <td>Country:<select name="country" id="country">
+                         <option value="India">India</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="China">China</option>
+                        </select>
+                        </td>
              <br>
              <br>
+        </tr>
         Email-id:<input type="email" name="email" id="email"><br>
         <br>
         Moblie no:<input type="number" name="no" id="no"><br>
@@ -33,5 +42,6 @@
         <input type="reset" name="reset" id="reset"><br>
     </form>
 </center>
+</table>
 </body>
 </html>
